@@ -1,4 +1,19 @@
-//COLORS
-$color-primary: #504d41;
-$color-primary-light: #ada78e;
-$color-white: #f6f1ee;
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/entertainment";
+@import "components/events";
+@import "components/food";
+@import "components/newsletter";
+@import "components/sightseeing";
+
+@import "layout/footer";
+@import "layout/header";
+@import "layout/grid";
+
+@import "pages/home";

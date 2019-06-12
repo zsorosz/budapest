@@ -1,17 +1,24 @@
 .heading-primary {
     color: $color-white;
     text-transform: uppercase;
-    line-height: .8;
+    line-height: .9;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     &--main {
     font-size: 5rem;
     font-weight: 900;
-    display: block;
+    text-align: center;
+
+    animation: moveInLeft 1s ease-out;
     }
 
     &--sub {
-    font-size: 2rem;
-    display: block;
+    font-size: 2rem;font-weight: 300;
+
+    animation: moveInRight 2s cubic-bezier(.68,-0.55,.74,1.76);
     }
 }

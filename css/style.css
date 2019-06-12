@@ -1,3 +1,22 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  50% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
 *,
 *::before,
 *::after {
@@ -20,15 +39,21 @@ body {
 .heading-primary {
   color: #f6f1ee;
   text-transform: uppercase;
-  line-height: .8;
-  padding: 2rem; }
+  line-height: .9;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
   .heading-primary--main {
     font-size: 5rem;
     font-weight: 900;
-    display: block; }
+    text-align: center;
+    animation: moveInLeft 1s ease-out; }
   .heading-primary--sub {
     font-size: 2rem;
-    display: block; }
+    font-weight: 300;
+    animation: moveInRight 2s cubic-bezier(0.68, -0.55, 0.74, 1.76); }
 
 .header {
   height: 30vh;

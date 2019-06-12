@@ -21,17 +21,18 @@ body {
   color: #f6f1ee;
   text-transform: uppercase;
   line-height: .8;
-  padding: 4rem; }
+  padding: 2rem; }
   .heading-primary--main {
-    font-size: 10rem;
-    font-weight: 900;
-    display: inline-block; }
-  .heading-primary--sub {
     font-size: 5rem;
-    display: inline-block; }
+    font-weight: 900;
+    display: block; }
+  .heading-primary--sub {
+    font-size: 2rem;
+    display: block; }
 
 .header {
-  height: 90vh;
+  height: 30vh;
+  width: 100%;
   background-image: url(../../img/header_1.jpg);
   background-size: cover;
   background-position: center;

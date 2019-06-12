@@ -1,0 +1,16 @@
+.header {
+    height: 90vh;
+    background-image: url(../../img/header_1.jpg);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__text-box {
+        width: 100%;
+        background-color: rgba($color-primary, .4);
+        text-align: center;
+    }
+}

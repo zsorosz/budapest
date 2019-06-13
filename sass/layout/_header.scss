@@ -1,5 +1,5 @@
 .header {
-    height: 30vh;
+    height: 50vh;
     width: 100%;
     background-image: url(../../img/header_1.jpg);
     background-size: cover;
@@ -8,6 +8,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include respond(tab-port) {
+        height: 75vh;
+    }
+    @include respond(tab-land) {
+        height: 85vh;
+    }
 
     &__text-box {
         width: 100%;

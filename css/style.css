@@ -1,10 +1,20 @@
 /*
 
-0 - 600px      Phone
-600 - 900px    Tablet portrait
-900 - 1200px   Tablet landscape
-1200 - 1800px  Desktop
-1800px +       Big desktop
+$bp-mobile-s: 0;
+$bp-mobile-p: 480px;
+$bp-mobile-l: 600px;
+$bp-mobile-xl: 657px;
+$bp-tablet-p: 768px;
+$bp-tablet-l: 1024px;
+$bp-desktop-m: 1230px;
+$bp-desktop-l: 1404px;
+$bp-desktop-xl: 1920px;
+
+0 - 768px      Phone
+768 - 1024px   Tablet portrait
+1024 - 1230px  Tablet landscape
+1230 - 1920px  Desktop
+1920px +       Big desktop
 
 $breakpoint argument choices
 -phone
@@ -41,7 +51,13 @@ $breakpoint argument choices
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 37.5%; }
+  @media only screen and (min-width: 48em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 64em) {
+    html {
+      font-size: 62.5%; } }
 
 body {
   font-family: "Nunito Sans", sans-serif;
@@ -61,17 +77,17 @@ body {
   justify-content: center;
   align-items: center; }
   .heading-primary--main {
-    font-size: 5rem;
+    font-size: 7rem;
     font-weight: 900;
     text-align: center;
     animation: moveInLeft 1s ease-out; }
   .heading-primary--sub {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 300;
     animation: moveInRight 2s cubic-bezier(0.68, -0.55, 0.74, 1.76); }
 
 .header {
-  height: 30vh;
+  height: 50vh;
   width: 100%;
   background-image: url(../../img/header_1.jpg);
   background-size: cover;
@@ -79,6 +95,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media only screen and (min-width: 48em) {
+    .header {
+      height: 75vh; } }
+  @media only screen and (min-width: 64em) {
+    .header {
+      height: 85vh; } }
   .header__text-box {
     width: 100%;
     background-color: rgba(80, 77, 65, 0.4);

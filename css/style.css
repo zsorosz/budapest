@@ -1,14 +1,20 @@
-/*
+/* MEDIA QUERY MANAGER
 
-$bp-mobile-s: 0;
-$bp-mobile-p: 480px;
-$bp-mobile-l: 600px;
-$bp-mobile-xl: 657px;
-$bp-tablet-p: 768px;
-$bp-tablet-l: 1024px;
-$bp-desktop-m: 1230px;
-$bp-desktop-l: 1404px;
-$bp-desktop-xl: 1920px;
+/////////////////////
+//All breakpoints:
+
+mobile-s: 0;
+mobile-p: 480px;
+mobile-l: 600px;
+mobile-xl: 657px;
+tablet-p: 768px;
+tablet-l: 1024px;
+desktop-m: 1230px;
+desktop-l: 1404px;
+desktop-xl: 1920px;
+
+/////////////////////
+//Breakpoints used:
 
 0 - 768px      Phone
 768 - 1024px   Tablet portrait
@@ -16,12 +22,21 @@ $bp-desktop-xl: 1920px;
 1230 - 1920px  Desktop
 1920px +       Big desktop
 
-$breakpoint argument choices
+/////////////////////
+//$breakpoint argument choices:
+
 -phone
 -tab-port
 -tab-land
 -desktop
 -big-desktop
+
+/////////////////////
+//Mixin usage example:
+
+  @include respond(tab-port) {
+        font-size: 50%;
+    }
 */
 @keyframes moveInLeft {
   0% {
@@ -70,12 +85,13 @@ body {
 .heading-primary {
   color: #f6f1ee;
   text-transform: uppercase;
-  line-height: .9;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  line-height: 1;
+  padding: 2rem; }
+  header .heading-primary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .heading-primary--main {
     font-size: 7rem;
     font-weight: 900;
@@ -89,7 +105,7 @@ body {
 .header {
   height: 50vh;
   width: 100%;
-  background-image: url(../../img/header_1.jpg);
+  background-image: url(../../img/header_2.jpeg);
   background-size: cover;
   background-position: center;
   display: flex;

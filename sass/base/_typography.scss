@@ -1,12 +1,15 @@
 .heading-primary {
     color: $color-white;
     text-transform: uppercase;
-    line-height: .9;
+    line-height: 1;
     padding: 2rem;
+
+    header & {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    }
 
     &--main {
     font-size: 7rem;

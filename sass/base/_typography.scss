@@ -26,3 +26,11 @@
     animation: moveInRight 2s cubic-bezier(.68,-0.55,.74,1.76);
     }
 }
+
+.heading-secondary {
+    color: $color-white;
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    padding: 2rem;
+}

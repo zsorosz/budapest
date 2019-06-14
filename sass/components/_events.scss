@@ -6,12 +6,26 @@
 .event-cards {
     display: flex;
     flex-direction: column;
-    //justify-content: center;
+    justify-content: center;
     align-items: center;
+
+    @include respond(tab-land) {
+        flex-direction: row;
+        padding: 2rem;
+    }
 }
 
 .card {
     width: 70vw;
+    background-color: $color-white;
+    border-radius: 1px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    box-shadow: $shadow-light;
+
+    @include respond(tab-land) {
+        margin: 2rem;
+    }
 
     &__picture {
         height: 25rem;
@@ -30,12 +44,17 @@
         }
     }
     &__details {
-
+        padding: 2rem;
+        color: $color-primary;
+        text-align: center;
+        line-height: .9;
     }
     &__heading {
-
+        font-size: 2rem;
+        font-weight: 600;
     }
     &__text {
-
+        font-size: 1.3rem;
+        margin-top: 1rem;
     }
 }

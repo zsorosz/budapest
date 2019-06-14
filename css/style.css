@@ -104,7 +104,7 @@ body {
 
 .heading-secondary {
   color: #f6f1ee;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 900;
   text-align: center;
   padding: 2rem; }
@@ -116,10 +116,23 @@ body {
 .event-cards {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center; }
+  @media only screen and (min-width: 64em) {
+    .event-cards {
+      flex-direction: row;
+      padding: 2rem; } }
 
 .card {
-  width: 70vw; }
+  width: 70vw;
+  background-color: #f6f1ee;
+  border-radius: 1px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06); }
+  @media only screen and (min-width: 64em) {
+    .card {
+      margin: 2rem; } }
   .card__picture {
     height: 25rem;
     width: 100%;
@@ -131,6 +144,17 @@ body {
       background-image: url(../../img/event_2.jpeg); }
     .card__picture--3 {
       background-image: url(../../img/event_3.jpg); }
+  .card__details {
+    padding: 2rem;
+    color: #504d41;
+    text-align: center;
+    line-height: .9; }
+  .card__heading {
+    font-size: 2rem;
+    font-weight: 600; }
+  .card__text {
+    font-size: 1.3rem;
+    margin-top: 1rem; }
 
 .header {
   height: 50vh;

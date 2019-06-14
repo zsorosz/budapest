@@ -129,10 +129,30 @@ body {
   border-radius: 1px;
   overflow: hidden;
   margin-bottom: 2rem;
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06); }
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  transition: all .2s;
+  position: relative; }
+  @media only screen and (min-width: 76.87em) {
+    .card:hover {
+      filter: brightness(30%); } }
+  @media only screen and (min-width: 76.87em) {
+    .card:hover .card__link {
+      visibility: visible;
+      height: 100%; } }
   @media only screen and (min-width: 64em) {
     .card {
       margin: 2rem; } }
+  .card__link {
+    visibility: hidden;
+    height: 0;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #f6f1ee;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
   .card__picture {
     height: 25rem;
     width: 100%;
@@ -147,8 +167,7 @@ body {
   .card__details {
     padding: 2rem;
     color: #504d41;
-    text-align: center;
-    line-height: .9; }
+    text-align: center; }
   .card__heading {
     font-size: 2rem;
     font-weight: 600; }

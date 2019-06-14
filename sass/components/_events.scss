@@ -22,9 +22,36 @@
     overflow: hidden;
     margin-bottom: 2rem;
     box-shadow: $shadow-light;
+    transition: all .2s;
+    position: relative;
+
+    &:hover {
+        @include respond(desktop) {
+            filter: brightness(30%);
+        }
+    }
+    &:hover &__link {
+        @include respond(desktop) {
+            visibility: visible;
+            height: 100%;
+        }
+    }
 
     @include respond(tab-land) {
         margin: 2rem;
+    }
+
+    &__link {
+        visibility: hidden;
+        height: 0;
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: 900;
+        color: $color-white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
     }
 
     &__picture {
@@ -47,7 +74,6 @@
         padding: 2rem;
         color: $color-primary;
         text-align: center;
-        line-height: .9;
     }
     &__heading {
         font-size: 2rem;

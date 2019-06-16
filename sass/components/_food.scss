@@ -1,0 +1,16 @@
+.food {
+    max-width: 100vw;
+    background-color: $color-primary-light;
+}
+
+.card__picture {
+    &--food1 {
+        background-image: url(../../img/food_1.jpg);
+    }
+    &--food2 {
+        background-image: url(../../img/food_2.jpeg);
+    }
+    &--food3 {
+        background-image: url(../../img/food_3.jpeg);
+    }
+}

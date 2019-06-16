@@ -1,0 +1,16 @@
+.entertainment {
+    max-width: 100vw;
+    background-color: $color-primary;
+}
+
+.card__picture {
+    &--entertainment1 {
+        background-image: url(../../img/entertainment_1.jpeg);
+    }
+    &--entertainment2 {
+        background-image: url(../../img/entertainment_2.jpeg);
+    }
+    &--entertainment3 {
+        background-image: url(../../img/entertainment_3.jpg);
+    }
+}

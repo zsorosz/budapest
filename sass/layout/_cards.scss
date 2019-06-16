@@ -1,0 +1,74 @@
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(tab-land) {
+        flex-direction: row;
+        padding: 2rem;
+    }
+}
+
+.card {
+    position: relative;
+
+    &:hover &__link {
+        @include respond(desktop) {
+            visibility: visible;
+        }
+    }
+
+    &:hover &__front {
+        @include respond(desktop) {
+            filter: brightness(30%);
+        }
+    }
+
+    &__front {
+    max-width: 70vw;
+    background-color: $color-white;
+    border-radius: 1px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    box-shadow: $shadow-light;
+    transition: all .4s;
+   
+    @include respond(tab-land) {
+        margin: 2rem;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 900;
+        color: $color-white;
+        visibility: hidden;
+        line-height: 1.2;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        transition: all .2s;
+    }
+    &__picture {
+        height: 25rem;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    &__details {
+        padding: 2rem;
+        color: $color-primary;
+        text-align: center;
+    }
+    &__heading {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    &__text {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+    }
+}

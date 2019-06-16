@@ -1,5 +1,5 @@
 .events {
-    width: 100vw;
+    max-width: 100vw;
     background-color: $color-primary;
 }
 
@@ -31,7 +31,7 @@
     }
 
     &__front {
-    width: 25vw;
+    max-width: 70vw;
     background-color: $color-white;
     border-radius: 1px;
     overflow: hidden;

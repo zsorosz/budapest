@@ -104,13 +104,13 @@ body {
 
 .heading-secondary {
   color: #f6f1ee;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 900;
   text-align: center;
   padding: 2rem; }
 
 .events {
-  width: 100vw;
+  max-width: 100vw;
   background-color: #504d41; }
 
 .event-cards {
@@ -132,7 +132,7 @@ body {
     .card:hover .card__front {
       filter: brightness(30%); } }
   .card__front {
-    width: 25vw;
+    max-width: 70vw;
     background-color: #f6f1ee;
     border-radius: 1px;
     overflow: hidden;

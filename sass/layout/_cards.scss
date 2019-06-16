@@ -1,17 +1,25 @@
+.category {
+    max-width: 100vw;
+}
+
 .cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2rem 2rem 4rem;
 
     @include respond(tab-land) {
         flex-direction: row;
-        padding: 2rem;
     }
 }
 
 .card {
     position: relative;
+
+    @include respond(tab-land) {
+        margin: 2rem;
+        }
 
     &:hover &__link {
         @include respond(desktop) {
@@ -30,13 +38,21 @@
     background-color: $color-white;
     border-radius: 1px;
     overflow: hidden;
-    margin-bottom: 2rem;
     box-shadow: $shadow-light;
     transition: all .4s;
+
+    // &:hover {
+    //     @include respond(desktop) {
+    //         filter: brightness(30%);
+    //     }
+    // }
+
+    // &:hover + .card__link {
+    //     @include respond(desktop) {
+    //     visibility: visible;
+    //     }
+    // }
    
-    @include respond(tab-land) {
-        margin: 2rem;
-        }
     }
     &__link {
         text-decoration: none;
@@ -50,7 +66,7 @@
         top: 40%;
         left: 50%;
         transform: translate(-50%,-50%);
-        transition: all .2s;
+        transition: all .2s ease-in-out;
     }
     &__picture {
         height: 25rem;

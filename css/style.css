@@ -110,7 +110,6 @@ body {
   padding: 2rem; }
 
 .entertainment {
-  max-width: 100vw;
   background-color: #504d41; }
 
 .card__picture--entertainment1 {
@@ -123,7 +122,6 @@ body {
   background-image: url(../../img/entertainment_3.jpg); }
 
 .events {
-  max-width: 100vw;
   background-color: #504d41; }
 
 .card__picture--1 {
@@ -136,7 +134,6 @@ body {
   background-image: url(../../img/event_3.jpg); }
 
 .food {
-  max-width: 100vw;
   background-color: #ada78e; }
 
 .card__picture--food1 {
@@ -168,18 +165,24 @@ body {
     background-color: rgba(80, 77, 65, 0.4);
     text-align: center; }
 
+.category {
+  max-width: 100vw; }
+
 .cards {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding: 2rem 2rem 4rem; }
   @media only screen and (min-width: 64em) {
     .cards {
-      flex-direction: row;
-      padding: 2rem; } }
+      flex-direction: row; } }
 
 .card {
   position: relative; }
+  @media only screen and (min-width: 64em) {
+    .card {
+      margin: 2rem; } }
   @media only screen and (min-width: 76.87em) {
     .card:hover .card__link {
       visibility: visible; } }
@@ -191,12 +194,8 @@ body {
     background-color: #f6f1ee;
     border-radius: 1px;
     overflow: hidden;
-    margin-bottom: 2rem;
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
     transition: all .4s; }
-    @media only screen and (min-width: 64em) {
-      .card__front {
-        margin: 2rem; } }
   .card__link {
     text-decoration: none;
     text-align: center;
@@ -209,7 +208,7 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: all .2s; }
+    transition: all .2s ease-in-out; }
   .card__picture {
     height: 25rem;
     width: 100%;

@@ -1,3 +1,62 @@
+/* MEDIA QUERY MANAGER
+
+/////////////////////
+//All breakpoints:
+
+mobile-s: 0;
+mobile-p: 480px;
+mobile-l: 600px;
+mobile-xl: 657px;
+tablet-p: 768px;
+tablet-l: 1024px;
+desktop-m: 1230px;
+desktop-l: 1404px;
+desktop-xl: 1920px;
+
+/////////////////////
+//Breakpoints used:
+
+0 - 768px      Phone
+768 - 1024px   Tablet portrait
+1024 - 1230px  Tablet landscape
+1230 - 1920px  Desktop
+1920px +       Big desktop
+
+/////////////////////
+//$breakpoint argument choices:
+
+-phone
+-tab-port
+-tab-land
+-desktop
+-big-desktop
+
+/////////////////////
+//Mixin usage example:
+
+  @include respond(tab-port) {
+        font-size: 50%;
+    }
+*/
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  50% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
 *,
 *::before,
 *::after {
@@ -7,10 +66,133 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 37.5%; }
+  @media only screen and (min-width: 48em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 64em) {
+    html {
+      font-size: 62.5%; } }
 
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+  color: #504d41;
+  font-weight: 400;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column; }
+
+.heading-primary {
   color: #f6f1ee;
-  font-weight: 300;
-  line-height: 1.6; }
+  text-transform: uppercase;
+  line-height: 1;
+  padding: 2rem; }
+  header .heading-primary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .heading-primary--main {
+    font-size: 7rem;
+    font-weight: 900;
+    text-align: center;
+    animation: moveInLeft 1s ease-out; }
+  .heading-primary--sub {
+    font-size: 3rem;
+    font-weight: 300;
+    animation: moveInRight 2s cubic-bezier(0.68, -0.55, 0.74, 1.76); }
+
+.heading-secondary {
+  color: #f6f1ee;
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+  padding: 2rem; }
+
+.events {
+  max-width: 100vw;
+  background-color: #504d41; }
+
+.event-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  @media only screen and (min-width: 64em) {
+    .event-cards {
+      flex-direction: row;
+      padding: 2rem; } }
+
+.card {
+  position: relative; }
+  @media only screen and (min-width: 76.87em) {
+    .card:hover .card__link {
+      visibility: visible; } }
+  @media only screen and (min-width: 76.87em) {
+    .card:hover .card__front {
+      filter: brightness(30%); } }
+  .card__front {
+    max-width: 70vw;
+    background-color: #f6f1ee;
+    border-radius: 1px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+    transition: all .4s; }
+    @media only screen and (min-width: 64em) {
+      .card__front {
+        margin: 2rem; } }
+  .card__link {
+    text-decoration: none;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #f6f1ee;
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .2s; }
+  .card__picture {
+    height: 25rem;
+    width: 100%;
+    background-size: cover;
+    background-position: center; }
+    .card__picture--1 {
+      background-image: url(../../img/event_1.jpg); }
+    .card__picture--2 {
+      background-image: url(../../img/event_2.jpeg); }
+    .card__picture--3 {
+      background-image: url(../../img/event_3.jpg); }
+  .card__details {
+    padding: 2rem;
+    color: #504d41;
+    text-align: center; }
+  .card__heading {
+    font-size: 2rem;
+    font-weight: 600; }
+  .card__text {
+    font-size: 1.3rem;
+    margin-top: 1rem; }
+
+.header {
+  height: 50vh;
+  width: 100%;
+  background-image: url(../../img/header_2.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media only screen and (min-width: 48em) {
+    .header {
+      height: 75vh; } }
+  @media only screen and (min-width: 64em) {
+    .header {
+      height: 85vh; } }
+  .header__text-box {
+    width: 100%;
+    background-color: rgba(80, 77, 65, 0.4);
+    text-align: center; }

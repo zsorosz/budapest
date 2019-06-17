@@ -113,7 +113,8 @@ body {
   font-size: 1.3rem;
   margin-top: 1rem;
   color: #504d41;
-  text-align: center; }
+  text-align: center;
+  font-weight: 300; }
 
 .entertainment {
   background-color: #504d41; }
@@ -154,43 +155,66 @@ body {
 .sightseeing {
   background-color: #ada78e;
   padding-bottom: 4rem; }
+  @media only screen and (min-width: 48em) {
+    .sightseeing {
+      padding-bottom: 0; } }
 
 .sights {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
-  width: 70vw; }
-  @media only screen and (min-width: 64em) {
-    .sights {
-      width: 100vw;
-      flex-direction: row; } }
-  @media only screen and (min-width: 64em) {
-    .sights__text {
-      display: inline; } }
+  width: 100%;
+  position: relative; }
+  .sights__text {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column; }
+    @media only screen and (min-width: 48em) {
+      .sights__text {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 70%;
+        margin: 2rem; } }
   .sights__heading {
     color: #504d41;
     text-transform: uppercase; }
-    @media only screen and (min-width: 64em) {
+    @media only screen and (min-width: 48em) {
       .sights__heading {
-        text-align: left; } }
-  @media only screen and (min-width: 64em) {
+        text-align: left;
+        padding: 0 1rem 0 0;
+        font-size: 4rem;
+        line-height: 1.2;
+        width: 50%; } }
+  @media only screen and (min-width: 48em) {
     .sights__details {
-      text-align: left; } }
-  .sights__pictures {
-    width: 100%;
-    height: 30rem;
-    display: flex;
-    margin-top: 2rem; }
+      text-align: left;
+      font-size: 2.5rem;
+      margin: 0 1rem;
+      width: 50%;
+      line-height: 1.2; } }
   .sights__img {
     background-size: cover;
-    background-position: bottom; }
+    background-position: bottom;
+    display: inline-block;
+    height: 30rem; }
     .sights__img--1 {
       background-image: url(../../img/sightseeing_1.jpg);
       width: 70%; }
+      @media only screen and (min-width: 48em) {
+        .sights__img--1 {
+          transform: translate(30%, -10%);
+          height: 20rem;
+          margin-top: 2rem;
+          background-position: center; } }
     .sights__img--2 {
       background-image: url(../../img/sightseeing_2.jpg);
-      width: 30%; }
+      width: 30%;
+      float: right; }
+      @media only screen and (min-width: 48em) {
+        .sights__img--2 {
+          height: 100%;
+          width: 25%;
+          position: absolute;
+          top: 0;
+          right: 0; } }
 
 .header {
   height: 50vh;

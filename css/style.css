@@ -154,13 +154,14 @@ body {
 
 .sightseeing {
   background-color: #ada78e;
-  padding-bottom: 4rem; }
-  @media only screen and (min-width: 48em) {
+  padding: 0 2rem; }
+  @media only screen and (min-width: 76.87em) {
     .sightseeing {
-      padding-bottom: 0; } }
+      height: 60rem; } }
 
 .sights {
   width: 100%;
+  height: 100%;
   position: relative; }
   .sights__text {
     margin-bottom: 2rem;
@@ -173,6 +174,9 @@ body {
         align-items: flex-start;
         width: 70%;
         margin: 2rem; } }
+    @media only screen and (min-width: 76.87em) {
+      .sights__text {
+        padding: 2rem; } }
   .sights__heading {
     color: #504d41;
     text-transform: uppercase; }
@@ -183,6 +187,9 @@ body {
         font-size: 4rem;
         line-height: 1.2;
         width: 50%; } }
+    @media only screen and (min-width: 76.87em) {
+      .sights__heading {
+        padding: 0 8rem; } }
   @media only screen and (min-width: 48em) {
     .sights__details {
       text-align: left;
@@ -194,7 +201,10 @@ body {
     background-size: cover;
     background-position: bottom;
     display: inline-block;
-    height: 30rem; }
+    height: 40rem; }
+    @media only screen and (min-width: 76.87em) {
+      .sights__img {
+        height: 60rem; } }
     .sights__img--1 {
       background-image: url(../../img/sightseeing_1.jpg);
       width: 70%; }
@@ -204,6 +214,10 @@ body {
           height: 20rem;
           margin-top: 2rem;
           background-position: center; } }
+      @media only screen and (min-width: 76.87em) {
+        .sights__img--1 {
+          height: 35rem;
+          transform: translateX(10%); } }
     .sights__img--2 {
       background-image: url(../../img/sightseeing_2.jpg);
       width: 30%;
@@ -215,6 +229,10 @@ body {
           position: absolute;
           top: 0;
           right: 0; } }
+      @media only screen and (min-width: 76.87em) {
+        .sights__img--2 {
+          margin-right: 8rem;
+          width: 20%; } }
 
 .header {
   height: 50vh;

@@ -12,6 +12,10 @@
     height: 100%;
     position: relative;
 
+    @include respond(desktop) {
+        margin-bottom: 4rem;
+    }
+
     &__text {
         margin-bottom: 2rem;
         display: flex;
@@ -81,7 +85,7 @@
 
             @include respond(desktop) {
                 height: 35rem;
-                transform: translateX(10%);
+                transform: translate(10%, -10%);
             }
         }
         &--2 {

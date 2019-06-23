@@ -161,25 +161,55 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start; }
+  @media only screen and (min-width: 48em) {
+    .newsletter {
+      height: 70vh; } }
+  @media only screen and (min-width: 76.87em) {
+    .newsletter {
+      height: 85vh; } }
   .newsletter__sign-up {
     width: 80%;
     height: 80%;
     background-color: rgba(80, 77, 65, 0.5);
     text-align: center; }
+    @media only screen and (min-width: 64em) {
+      .newsletter__sign-up {
+        height: 90%;
+        width: 60%; } }
+    @media only screen and (min-width: 76.87em) {
+      .newsletter__sign-up {
+        height: 70%;
+        width: 60%; } }
   .newsletter__heading {
     font-size: 4rem;
     line-height: 1.2;
     text-align: left; }
+    @media only screen and (min-width: 48em) {
+      .newsletter__heading {
+        width: 70%; } }
+    @media only screen and (min-width: 76.87em) {
+      .newsletter__heading {
+        width: 50%; } }
   .newsletter__form {
     margin: 2rem; }
-  .newsletter__email {
-    width: 100%;
+  .newsletter__input {
     padding: 1rem 2rem;
     outline: 0;
     font-family: inherit; }
-  .newsletter__submit {
-    float: right;
-    margin-top: 2rem; }
+    .newsletter__input--email {
+      width: 100%;
+      border: 1px solid #ada78e; }
+      .newsletter__input--email:focus {
+        border: 1px solid #504d41; }
+    .newsletter__input--submit {
+      float: right;
+      margin-top: 2rem;
+      background-color: #ada78e;
+      color: #f6f1ee;
+      border: none; }
+      .newsletter__input--submit:hover {
+        cursor: pointer;
+        background-color: #504d41; }
 
 .sightseeing {
   background-color: #ada78e;
@@ -192,6 +222,9 @@ body {
   width: 100%;
   height: 100%;
   position: relative; }
+  @media only screen and (min-width: 76.87em) {
+    .sights {
+      margin-bottom: 4rem; } }
   .sights__text {
     margin-bottom: 2rem;
     display: flex;
@@ -246,7 +279,7 @@ body {
       @media only screen and (min-width: 76.87em) {
         .sights__img--1 {
           height: 35rem;
-          transform: translateX(10%); } }
+          transform: translate(10%, -10%); } }
     .sights__img--2 {
       background-image: url(../../img/sightseeing_2.jpg);
       width: 30%;

@@ -152,9 +152,38 @@ body {
 .card__picture--food3 {
   background-image: url(../../img/food_3.jpeg); }
 
+.newsletter {
+  height: 50vh;
+  max-width: 100vw;
+  background-image: url(../../img/newsletter.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; }
+  .newsletter__sign-up {
+    width: 80%;
+    height: 80%;
+    background-color: rgba(80, 77, 65, 0.5);
+    text-align: center; }
+  .newsletter__heading {
+    font-size: 4rem;
+    line-height: 1.2;
+    text-align: left; }
+  .newsletter__form {
+    margin: 2rem; }
+  .newsletter__email {
+    width: 100%;
+    padding: 1rem 2rem;
+    outline: 0;
+    font-family: inherit; }
+  .newsletter__submit {
+    float: right;
+    margin-top: 2rem; }
+
 .sightseeing {
   background-color: #ada78e;
-  padding: 0 2rem; }
+  padding: 2rem; }
   @media only screen and (min-width: 76.87em) {
     .sightseeing {
       height: 60rem; } }

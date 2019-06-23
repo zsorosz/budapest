@@ -1,6 +1,6 @@
 .sightseeing {
     background-color: $color-primary-light;
-    padding: 0 2rem;
+    padding: 2rem;
 
     @include respond(desktop) {
         height: 60rem;

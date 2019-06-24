@@ -69,6 +69,10 @@
         color: $color-white;
         border: none;
 
+        @include respond(desktop) {
+            font-size: 2rem;
+        }
+
             &:hover {
                 cursor: pointer;
                 background-color: $color-primary;

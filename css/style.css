@@ -409,3 +409,35 @@ body {
   .card__heading {
     font-size: 2rem;
     font-weight: 600; }
+
+.header-events {
+  background-color: #ada78e; }
+  .header-events .heading-secondary {
+    font-size: 4rem;
+    text-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3); }
+
+.calendar {
+  background-color: #504d41;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .calendar__month {
+    font-size: 4rem;
+    font-weight: 300;
+    color: #f6f1ee;
+    font-family: inherit;
+    margin-bottom: 2rem; }
+  .calendar__event {
+    position: relative; }
+  .calendar__date {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    font-size: 6rem;
+    color: #f6f1ee;
+    border: 2px solid #f6f1ee;
+    padding: 0 1rem; }

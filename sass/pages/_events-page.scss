@@ -1,0 +1,41 @@
+.header-events {
+    background-color: $color-primary-light;
+
+    .heading-secondary {
+        font-size: 4rem;
+        text-shadow: $shadow-dark;
+    }
+}
+
+.calendar {
+    background-color: $color-primary;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__month {
+        font-size: 4rem;
+        font-weight: 300;
+        color: $color-white;
+        font-family: inherit;
+        margin-bottom: 2rem;
+    }
+
+    &__event {
+        position: relative;
+    }
+
+    &__date {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        font-size: 6rem;
+        color: $color-white;
+        border: 2px solid $color-white;
+        padding: 0 1rem;
+    }
+}

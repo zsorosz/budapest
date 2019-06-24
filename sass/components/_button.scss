@@ -1,17 +1,16 @@
 .btn {
-
     &,
     &:link,
     &:visited {
         text-decoration: none;
-    background-color: transparent;
-    color: $color-white;
-    font-size: 2rem;
-    border: 1px solid $color-white;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    border-radius: 2px;
-    transition: all .2s;
+        background-color: transparent;
+        color: $color-white;
+        font-size: 2rem;
+        border: 1px solid $color-white;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        border-radius: 2px;
+        transition: all .2s;
     }
 
     &:active,

@@ -370,15 +370,17 @@ body {
   justify-content: center;
   align-items: center;
   padding: 2rem; }
-  @media only screen and (min-width: 64em) {
+  @media only screen and (min-width: 48em) {
     .cards {
       flex-direction: row; } }
 
 .card {
   position: relative;
-  margin-bottom: 4rem; }
-  @media only screen and (min-width: 64em) {
+  margin-bottom: 4rem;
+  max-width: 70vw; }
+  @media only screen and (min-width: 48em) {
     .card {
+      width: 28vw;
       margin: 2rem; } }
   @media only screen and (min-width: 76.87em) {
     .card:hover .card__link {
@@ -387,7 +389,6 @@ body {
     .card:hover .card__front {
       filter: brightness(30%); } }
   .card__front {
-    max-width: 70vw;
     background-color: #f6f1ee;
     border-radius: 1px;
     overflow: hidden;
@@ -422,8 +423,7 @@ body {
 .header-events {
   background-color: #ada78e; }
   .header-events .heading-secondary {
-    font-size: 4rem;
-    text-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3); }
+    font-size: 4rem; }
 
 .calendar {
   background-color: #504d41;
@@ -432,12 +432,19 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center; }
+  @media only screen and (min-width: 48em) {
+    .calendar {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center; } }
   .calendar__month {
     font-size: 4rem;
     font-weight: 300;
     color: #f6f1ee;
     font-family: inherit;
-    margin-bottom: 2rem; }
+    margin: 2rem 0;
+    width: 100vw;
+    text-align: center; }
   .calendar__event {
     position: relative; }
   .calendar__date {

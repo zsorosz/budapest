@@ -1,0 +1,50 @@
+.sight {
+    max-width: 70vw;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__picture {
+        width: 100%;
+        height: 20rem;
+        background-size: cover;
+        background-position: center;
+
+        &--1 {
+            background-image: url(../../img/sightseeing_1.jpg);
+        }
+        &--2 {
+            background-image: url(../../img/sightseeing_2.jpg);
+        }
+        &--3 {
+            background-image: url(../../img/event_1.jpg);
+        }
+        &--4 {
+            background-image: url(../../img/entertainment_1.jpeg);
+        }
+        &--5 {
+            background-image: url(../../img/food_1.jpg);
+        }
+        &--6 {
+            background-image: url(../../img/newsletter.jpg);
+        }
+    }
+
+    &__details {
+        padding: 2rem 0 4rem;
+        border-bottom: .5px solid $color-white;
+    }
+
+    &__heading {
+        color: $color-white;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    &__text {
+        color: $color-white;
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+}

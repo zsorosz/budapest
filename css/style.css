@@ -420,12 +420,12 @@ body {
     font-size: 2rem;
     font-weight: 600; }
 
-.header-events {
+.header-cathegory {
   background-color: #ada78e; }
-  .header-events .heading-secondary {
+  .header-cathegory .heading-secondary {
     font-size: 4rem; }
 
-.calendar {
+.main-cathegory {
   background-color: #504d41;
   min-height: 100vh;
   display: flex;
@@ -433,28 +433,66 @@ body {
   justify-content: flex-start;
   align-items: center; }
   @media only screen and (min-width: 48em) {
-    .calendar {
+    .main-cathegory {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center; } }
-  .calendar__month {
-    font-size: 4rem;
-    font-weight: 300;
+
+.calendar__month {
+  font-size: 4rem;
+  font-weight: 300;
+  color: #f6f1ee;
+  font-family: inherit;
+  margin: 2rem 0;
+  width: 100vw;
+  text-align: center; }
+
+.calendar__event {
+  position: relative; }
+
+.calendar__date {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  font-size: 6rem;
+  color: #f6f1ee;
+  background-color: rgba(80, 77, 65, 0.4);
+  border: 2px solid #f6f1ee;
+  padding: 0 1rem; }
+
+.sight {
+  max-width: 70vw;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .sight__picture {
+    width: 100%;
+    height: 20rem;
+    background-size: cover;
+    background-position: center; }
+    .sight__picture--1 {
+      background-image: url(../../img/sightseeing_1.jpg); }
+    .sight__picture--2 {
+      background-image: url(../../img/sightseeing_2.jpg); }
+    .sight__picture--3 {
+      background-image: url(../../img/event_1.jpg); }
+    .sight__picture--4 {
+      background-image: url(../../img/entertainment_1.jpeg); }
+    .sight__picture--5 {
+      background-image: url(../../img/food_1.jpg); }
+    .sight__picture--6 {
+      background-image: url(../../img/newsletter.jpg); }
+  .sight__details {
+    padding: 2rem 0 4rem;
+    border-bottom: 0.5px solid #f6f1ee; }
+  .sight__heading {
     color: #f6f1ee;
-    font-family: inherit;
-    margin: 2rem 0;
-    width: 100vw;
-    text-align: center; }
-  .calendar__event {
-    position: relative; }
-  .calendar__date {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    font-size: 6rem;
+    text-align: center;
+    font-size: 2.5rem; }
+  .sight__text {
     color: #f6f1ee;
-    background-color: rgba(80, 77, 65, 0.4);
-    border: 2px solid #f6f1ee;
-    padding: 0 1rem; }
+    font-size: 1.5rem;
+    line-height: 1.4; }

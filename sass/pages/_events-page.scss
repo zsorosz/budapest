@@ -1,25 +1,4 @@
-.header-events {
-    background-color: $color-primary-light;
-
-    .heading-secondary {
-        font-size: 4rem;
-    }
-}
-
 .calendar {
-    background-color: $color-primary;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-
-    @include respond(tab-port) {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
     &__month {
         font-size: 4rem;
         font-weight: 300;

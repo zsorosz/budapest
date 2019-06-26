@@ -143,6 +143,15 @@ body {
 .card__picture--3 {
   background-image: url(../../img/event_3.jpg); }
 
+.card__picture--4 {
+  background-image: url(../../img/event_1.jpg); }
+
+.card__picture--5 {
+  background-image: url(../../img/event_2.jpeg); }
+
+.card__picture--6 {
+  background-image: url(../../img/event_3.jpg); }
+
 .food {
   background-color: #ada78e; }
 
@@ -329,7 +338,7 @@ body {
   margin: 2rem; }
 
 .header {
-  height: 50vh;
+  height: 90vh;
   width: 100%;
   background-image: url(../../img/header_2.jpeg);
   background-size: cover;
@@ -421,7 +430,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center; }
   .calendar__month {
     font-size: 4rem;
@@ -439,5 +448,6 @@ body {
     z-index: 10;
     font-size: 6rem;
     color: #f6f1ee;
+    background-color: rgba(80, 77, 65, 0.4);
     border: 2px solid #f6f1ee;
     padding: 0 1rem; }

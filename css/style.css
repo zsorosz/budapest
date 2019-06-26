@@ -468,11 +468,20 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  @media only screen and (min-width: 48em) {
+    .sight {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-around; } }
   .sight__picture {
     width: 100%;
     height: 20rem;
     background-size: cover;
     background-position: center; }
+    @media only screen and (min-width: 48em) {
+      .sight__picture {
+        width: 50%;
+        height: 30rem; } }
     .sight__picture--1 {
       background-image: url(../../img/sightseeing_1.jpg); }
     .sight__picture--2 {
@@ -486,13 +495,23 @@ body {
     .sight__picture--6 {
       background-image: url(../../img/newsletter.jpg); }
   .sight__details {
-    padding: 2rem 0 4rem;
-    border-bottom: 0.5px solid #f6f1ee; }
+    padding: 2rem 0 4rem; }
+    @media only screen and (min-width: 48em) {
+      .sight__details {
+        margin-left: 2rem;
+        width: 50%;
+        padding: 0 0 4rem; } }
   .sight__heading {
     color: #f6f1ee;
     text-align: center;
     font-size: 2.5rem; }
+    @media only screen and (min-width: 48em) {
+      .sight__heading {
+        text-align: left; } }
   .sight__text {
     color: #f6f1ee;
     font-size: 1.5rem;
     line-height: 1.4; }
+    @media only screen and (min-width: 48em) {
+      .sight__text {
+        text-align: left; } }

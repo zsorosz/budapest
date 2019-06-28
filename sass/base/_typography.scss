@@ -33,17 +33,22 @@
 
 .heading-secondary {
     color: $color-white;
-    font-size: 3rem;
+    font-size: 4rem;
+    line-height: 1.2;
     font-weight: 900;
     text-align: center;
     padding: 2rem;
 }
 
 .paragraph {
-    font-size: 1.3rem;
+    font-size: 2rem;
     margin-top: 1rem;
     color: $color-primary;
     text-align: center;
     font-weight: 300;
+
+    @include respond(tab-land) {
+        font-size: 1.5rem;
+    }
 }
 

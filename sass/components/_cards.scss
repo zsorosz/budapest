@@ -21,7 +21,7 @@
 .card {
     position: relative;
     margin-bottom: 4rem;
-    max-width: 70vw;
+    max-width: 90vw;
 
     @include respond(tab-port) {
         width: 28vw;
@@ -74,7 +74,11 @@
         text-align: center;
     }
     &__heading {
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: 600;
+
+        @include respond(tab-land) {
+            font-size: 2rem;
+        }
     }
 }

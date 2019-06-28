@@ -17,16 +17,11 @@
 
     &__sign-up {
         width: 80%;
-        height: 80%;
+        min-height: 80%;
         background-color: rgba($color-primary, .5);
         text-align: center;
 
         @include respond(tab-land) {
-            height: 90%;
-            width: 60%;
-        }
-        @include respond(desktop) {
-            height: 70%;
             width: 60%;
         }
     }
@@ -64,19 +59,19 @@
         
         &--submit {
         float: right;
-        margin-top: 2rem;
+        margin: 2rem 0;
         background-color: $color-primary-light;
         color: $color-white;
         border: none;
 
         @include respond(desktop) {
             font-size: 2rem;
-        }
 
             &:hover {
                 cursor: pointer;
                 background-color: $color-primary;
             }
+        }
         }
     }
 }

@@ -23,4 +23,17 @@
         background-color: $color-white;
         color: $color-primary;
     }
+
+    &--home {
+        margin: 2.5rem 6rem;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        visibility: hidden;
+
+        @include respond(desktop) {
+            visibility: visible;
+        }
+    }
 }

@@ -1,8 +1,10 @@
 .header-cathegory {
     background-color: $color-primary-light;
+    position: relative;
 
     .heading-secondary {
         font-size: 4rem;
+        //display: inline-block;
     }
 }
 .main-cathegory {

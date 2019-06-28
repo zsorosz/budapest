@@ -501,8 +501,8 @@ body {
   padding: 0 1rem; }
 
 .sight {
-  max-width: 70vw;
-  margin-bottom: 4rem;
+  max-width: 90vw;
+  margin: 4rem 0;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -515,7 +515,8 @@ body {
     width: 100%;
     height: 20rem;
     background-size: cover;
-    background-position: center; }
+    background-position: center;
+    margin-bottom: 2rem; }
     @media only screen and (min-width: 48em) {
       .sight__picture {
         width: 50%;
@@ -532,23 +533,21 @@ body {
       background-image: url(../../img/food_1.jpg); }
     .sight__picture--6 {
       background-image: url(../../img/newsletter.jpg); }
-  .sight__details {
-    padding: 2rem 0 4rem; }
-    @media only screen and (min-width: 48em) {
-      .sight__details {
-        margin-left: 2rem;
-        width: 50%;
-        padding: 0 0 4rem; } }
+  @media only screen and (min-width: 48em) {
+    .sight__details {
+      margin-left: 2rem;
+      width: 50%; } }
   .sight__heading {
     color: #f6f1ee;
+    font-weight: 800;
     text-align: center;
-    font-size: 2.5rem; }
+    font-size: 3rem; }
     @media only screen and (min-width: 48em) {
       .sight__heading {
         text-align: left; } }
   .sight__text {
     color: #f6f1ee;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     line-height: 1.4; }
     @media only screen and (min-width: 48em) {
       .sight__text {

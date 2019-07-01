@@ -1,7 +1,7 @@
 .header {
     height: 90vh;
     width: 100%;
-    background-image: url(../../img/header_2.jpeg);
+    background-image: url(../../img/header_2_phone.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -10,9 +10,14 @@
 
     @include respond(tab-port) {
         height: 75vh;
+        background-image: url(../../img/header_2_tab-port.jpg);
     }
     @include respond(tab-land) {
         height: 85vh;
+        background-image: url(../../img/header_2_tab-land.jpg);
+    }
+    @include respond(desktop) {
+        background-image: url(../../img/header_2_desktop.jpeg);
     }
 
     &__text-box {

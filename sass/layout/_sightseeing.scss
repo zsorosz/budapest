@@ -71,10 +71,11 @@
         }
 
         &--1 {
-            background-image: url(../../img/sightseeing_1.jpg);
+            background-image: url(../../img/sightseeing_1_phone.jpg);
             width: 70%;
 
             @include respond(tab-port) {
+                background-image: url(../../img/sightseeing_1_tab-port.jpg);
                 transform: translate(2rem, -10%);
                 width: 80%;
                 height: 25rem;
@@ -83,16 +84,18 @@
             }
 
             @include respond(desktop) {
+                background-image: url(../../img/sightseeing_1_desktop.jpg);
                 height: 35rem;
                 transform: translate(10%, -10%);
             }
         }
         &--2 {
-            background-image: url(../../img/sightseeing_2.jpg);
+            background-image: url(../../img/sightseeing_2_phone.jpg);
             width: 30%;
             float: right;
 
             @include respond(tab-port) {
+                background-image: url(../../img/sightseeing_2_tab-port.jpg);
                 height: 100%;
                 width: 25%;
                 position: absolute;
@@ -101,6 +104,7 @@
             }
 
             @include respond(desktop) {
+                background-image: url(../../img/sightseeing_2_desktop.jpg);
                 margin-right: 8rem;
                 width: 20%;
             }

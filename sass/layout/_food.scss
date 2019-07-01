@@ -4,21 +4,33 @@
 
 .card__picture {
     &--food1 {
-        background-image: url(../../img/food_1.jpg);
+        background-image: url(../../img/food_1_phone.jpg);
+
+        @include respond(tab-port) {
+            background-image: url(../../img/food_1_tab-port.jpg);
+        }
+        @include respond(desktop) {
+            background-image: url(../../img/food_1_desktop.jpg);
+        }
     }
     &--food2 {
-        background-image: url(../../img/food_2.jpeg);
+        background-image: url(../../img/food_2_phone.jpg);
+
+        @include respond(tab-port) {
+            background-image: url(../../img/food_2_tab-port.jpg);
+        }
+        @include respond(desktop) {
+            background-image: url(../../img/food_2_desktop.jpg);
+        }
     }
     &--food3 {
-        background-image: url(../../img/food_3.jpeg);
-    }
-    &--food4 {
-        background-image: url(../../img/food_1.jpg);
-    }
-    &--food5 {
-        background-image: url(../../img/food_2.jpeg);
-    }
-    &--food6 {
-        background-image: url(../../img/food_3.jpeg);
+        background-image: url(../../img/food_3_phone.jpg);
+
+        @include respond(tab-port) {
+            background-image: url(../../img/food_3_tab-port.jpg);
+        }
+        @include respond(desktop) {
+            background-image: url(../../img/food_3_desktop.jpg);
+        }
     }
 }

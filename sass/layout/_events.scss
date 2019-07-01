@@ -4,21 +4,36 @@
 
 .card__picture {
         &--1 {
-            background-image: url(../../img/event_1.jpg);
+            background-image: url(../../img/event_1_phone.jpg);
+
+            @include respond(tab-port) {
+                background-image: url(../../img/event_1_tab-port.jpg);
+            }
+            @include respond(tab-land) {
+                background-image: url(../../img/event_1_tab-land.jpg);
+            }
+            @include respond(desktop) {
+                background-image: url(../../img/event_1_desktop.jpg);
+            }
         }
         &--2 {
-            background-image: url(../../img/event_2.jpeg);
+            background-image: url(../../img/event_2_phone.jpg);
+
+            @include respond(tab-port) {
+                background-image: url(../../img/event_2_tab-port.jpg);
+            }
+            @include respond(desktop) {
+                background-image: url(../../img/event_2_desktop.jpg);
+            }
         }
         &--3 {
-            background-image: url(../../img/event_3.jpg);
-        }
-        &--4 {
-            background-image: url(../../img/event_1.jpg);
-        }
-        &--5 {
-            background-image: url(../../img/event_2.jpeg);
-        }
-        &--6 {
-            background-image: url(../../img/event_3.jpg);
+            background-image: url(../../img/event_3_phone.jpg);
+
+            @include respond(tab-port) {
+                background-image: url(../../img/event_3_tab-port.jpg);
+            }
+            @include respond(desktop) {
+                background-image: url(../../img/event_3_desktop.jpg);
+            }
         }
     }

@@ -4,21 +4,33 @@
 
 .card__picture {
     &--entertainment1 {
-        background-image: url(../../img/entertainment_1.jpeg);
+        background-image: url(../../img/entertainment_1_phone.jpg);
+
+        @include respond(tab-port) {
+            background-image: url(../../img/entertainment_1_tab-port.jpg);
+        }
+        @include respond(desktop) {
+            background-image: url(../../img/entertainment_1_desktop.jpg);
+        }
     }
     &--entertainment2 {
-        background-image: url(../../img/entertainment_2.jpeg);
+        background-image: url(../../img/entertainment_2_phone.jpg);
+
+        @include respond(tab-port) {
+            background-image: url(../../img/entertainment_2_tab-port.jpg);
+        }
+        @include respond(desktop) {
+            background-image: url(../../img/entertainment_2_desktop.jpg);
+        }
     }
     &--entertainment3 {
-        background-image: url(../../img/entertainment_3.jpg);
-    }
-    &--entertainment4 {
-        background-image: url(../../img/entertainment_1.jpeg);
-    }
-    &--entertainment5 {
-        background-image: url(../../img/entertainment_2.jpeg);
-    }
-    &--entertainment6 {
-        background-image: url(../../img/entertainment_3.jpg);
+        background-image: url(../../img/entertainment_3_phone.jpg);
+
+        @include respond(tab-port) {
+            background-image: url(../../img/entertainment_3_tab-port.jpg);
+        }
+        @include respond(desktop) {
+            background-image: url(../../img/entertainment_3_desktop.jpg);
+        }
     }
 }
